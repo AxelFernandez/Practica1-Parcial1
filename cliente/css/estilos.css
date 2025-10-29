@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.titulo {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+}
+
+.titulo h1 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.estadisticas {
+  color: #00d9ff;
+  text-align: center;
+  margin: 10px;
+}
+
+.estadisticas span {
+  margin: 0 10px;
+}
+
+.salon {
+  background-color: black;
+  height: 600px;
+  position: relative;
+  padding: 20px;
+}
+
+.mesa {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.mesa:hover {
+  border: 3px solid white;
+}
+
+.mesa.ocupada {
+  border-color: #00d9ff;
+}
+
+.mesa.libre {
+  opacity: 0.6;
+}
+
+.redonda {
+  border-radius: 50%;
+}
+
+.cuadrada {
+  border-radius: 10px;
+}
+
+/* colores de las mesas */
+.azul { background-color: #3498db; }
+.verde { background-color: #27ae60; }
+.naranja { background-color: #e67e22; }
+.roja { background-color: #c0392b; }
+.violeta { background-color: #8e44ad; }
+.turquesa { background-color: #1abc9c; }
+.gris { background-color: #7f8c8d; }
+.rosa { background-color: #fd79a8; }
+.amarillo { background-color: #f1c40f; }
+
+/* detalle de mesa */
+.detalle-mesa {
+  padding: 30px;
+}
+
+.detalle-mesa h2 {
+  color: white;
+  border-bottom: 2px solid #00d9ff;
+  padding-bottom: 10px;
+}
+
+#info-mesa {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+#info-mesa p {
+  margin: 10px 0;
+}
+
+#info-mesa strong {
+  color: #00d9ff;
+}
+
+.acciones {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-editar {
+  background-color: #00d9ff;
+  color: black;
+}
+
+.btn-liberar {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-volver {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* formulario */
+#formulario-edicion {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #00d9ff;
+}
+
+#formulario-edicion h3 {
+  color: #00d9ff;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  color: #00d9ff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #00d9ff;
+  background-color: #222;
+  color: white;
+}
+
+.btn-guardar {
+  background-color: #00d9ff;
+  color: black;
+}
+
+.btn-cancelar {
+  background-color: #888;
+  color: white;
+}
+

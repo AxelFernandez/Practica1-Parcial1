@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mesa - Detalle</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <div class="detalle-mesa">
+    <h2 id="titulo-mesa">Cargando...</h2>
+    
+    <div id="info-mesa"></div>
+
+    <div id="formulario-edicion" style="display: none;">
+      <h3>Editar Mesa</h3>
+      
+      <form id="form-mesa">
+        <div class="form-group">
+          <label>Estado:</label>
+          <select id="estado" onchange="mostrarOcultarCampos()" required>
+            <option value="">Seleccionar...</option>
+            <option value="Libre">Libre</option>
+            <option value="Ocupada">Ocupada</option>
+          </select>
+        </div>
+        
+        <div id="campos-ocupada" style="display: none;">
+          <div class="form-group">
+            <label>Mozo:</label>
+            <input type="text" id="mozo" minlength="3" maxlength="50" placeholder="Nombre del mozo">
+          </div>
+          
+          <div class="form-group">
+            <label>Clientes:</label>
+            <input type="number" id="clientes" value="1" min="1" max="20">
+          </div>
+          
+          <div class="form-group">
+            <label>Pedido:</label>
+            <textarea id="pedido" rows="3" maxlength="200" placeholder="Detalles del pedido"></textarea>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-guardar">Guardar</button>
+        <button type="button" class="btn btn-cancelar" onclick="toggleFormulario()">Cancelar</button>
+      </form>
+    </div>
+
+    <div class="acciones">
+      <button class="btn btn-editar" onclick="toggleFormulario()">Editar</button>
+      <button class="btn btn-liberar" id="btn-liberar" onclick="liberarMesa()" style="display: none;">Liberar</button>
+      <a href="index.html" class="btn-volver">Volver</a>
+    </div>
+  </div>
+  
+  <script src="../js/mesa.js"></script>
+</body>
+</html>
+
